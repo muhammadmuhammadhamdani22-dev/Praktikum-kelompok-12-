@@ -1,0 +1,101 @@
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-color: #d3d3d6;
+  text-align: center;
+  padding: 24px 16px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.intro {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.anggota {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card img {
+  width: 140px;
+  height: 160px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.role {
+  background: #e0e0e0;
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.card table td {
+  font-size: 0.85rem;
+  padding: 2px 6px 2px 0;
+}
+
+.bio {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 8px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+footer {
+  background-color: #d3d3d6;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+  .anggota {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card:nth-child(5) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 50%;
+}
+
+}
